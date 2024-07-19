@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1079820519621",
+    "project_id": "welcome-app-6a028",
+    "storage_bucket": "welcome-app-6a028.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079820519621:android:c392e4abc24dc4564148ac",
+        "android_client_info": {
+          "package_name": "com.welcome.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATvPB0gmiUrZwZ9aZmJeJlbUgcFsVrgCM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
