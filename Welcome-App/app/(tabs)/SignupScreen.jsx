@@ -4,7 +4,7 @@ import { ThemedView } from "@/components/ThemedView";
 import { useState } from "react";
 import { doCreateUserWithEmailAndPassword } from "../../firebase/auth";
 
-export default function HomeScreen() {
+export default function SignupScreen() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 

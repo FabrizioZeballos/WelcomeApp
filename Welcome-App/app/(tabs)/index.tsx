@@ -1,27 +1,13 @@
-import { StyleSheet, View, TouchableHighlight } from "react-native";
+import { StyleSheet, View, TouchableHighlight, Button } from "react-native";
 import { ThemedText } from "@/components/ThemedText";
-import { useNavigation } from "@react-navigation/native";
 
 export default function HomeScreen() {
-  const navigation = useNavigation();
-
-  const onPressLogIn = () => {
-    navigation.navigate("Login");
-  };
-
-  const onPressNewAccount = () => {
-    navigation.navigate("New Account");
-  };
-
   return (
     <View style={styles.hcontainer}>
-      <TouchableHighlight style={styles.buttonContainer} onPress={onPressLogIn}>
+      <TouchableHighlight style={styles.buttonContainer}>
         <ThemedText style={styles.buttonText}>Log In</ThemedText>
       </TouchableHighlight>
-      <TouchableHighlight
-        style={styles.buttonContainer}
-        onPress={onPressNewAccount}
-      >
+      <TouchableHighlight style={styles.buttonContainer}>
         <ThemedText style={styles.buttonText}>New Account</ThemedText>
       </TouchableHighlight>
     </View>

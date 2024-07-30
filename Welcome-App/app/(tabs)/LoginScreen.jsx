@@ -1,4 +1,10 @@
-import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
+import {
+  Button,
+  StyleSheet,
+  TextInput,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
 import { useState } from "react";
@@ -7,7 +13,7 @@ import {
   doSignInWithGoogle,
 } from "../../firebase/auth";
 
-export default function HomeScreen() {
+export default function LoginScreen() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -25,7 +31,7 @@ export default function HomeScreen() {
   };
 
   const handleGoogleSignIn = async () => {
-    console.log("he");
+    console.log("Google Sign In");
     try {
       await doSignInWithGoogle();
     } catch (error) {
